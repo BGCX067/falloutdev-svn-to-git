@@ -1,0 +1,18 @@
+#labels Featured
+#Project description
+
+= Introduction =
+
+Another Fallout development project.
+
+
+= Details =
+
+*Welcome, stranger.*
+
+You're surfing the wiki of Random Fallout development project.
+This project is focused on different aspects of games development.
+
+===Start with some documentation===
+
+* [http://code.google.com/p/falloutdev/wiki/Project_documentation Project documentation]

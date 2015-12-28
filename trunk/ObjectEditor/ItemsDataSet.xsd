@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="ItemsDataSet" targetNamespace="http://www.tempuri.org/ItemsDataSet.xsd" xmlns:mstns="http://www.tempuri.org/ItemsDataSet.xsd" xmlns="http://www.tempuri.org/ItemsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="ItemsDataSet" msdata:IsDataSet="true" msdata:Locale="uk-UA">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="items">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ObjectType" type="xs:short" />
+              <xs:element name="ObjectID" type="xs:short" />
+              <xs:element name="ObjectFullID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ObjectName" type="xs:string" minOccurs="0" />
+              <xs:element name="ObjectDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="Expr1" type="xs:short" />
+              <xs:element name="Expr2" type="xs:short" />
+              <xs:element name="Expr3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Expr4" type="xs:string" minOccurs="0" />
+              <xs:element name="Expr5" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:items" />
+      <xs:field xpath="mstns:ObjectType" />
+      <xs:field xpath="mstns:ObjectID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

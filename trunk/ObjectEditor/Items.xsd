@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Items" targetNamespace="http://www.tempuri.org/Items.xsd" xmlns:mstns="http://www.tempuri.org/Items.xsd" xmlns="http://www.tempuri.org/Items.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="Items" msdata:IsDataSet="true" msdata:Locale="uk-UA">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="items">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ObjectType" type="xs:short" />
+              <xs:element name="ObjectID" type="xs:short" />
+              <xs:element name="ObjectFullID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FrameIDType" type="xs:short" minOccurs="0" />
+              <xs:element name="FrameIDOffset" type="xs:short" minOccurs="0" />
+              <xs:element name="FrameID" type="xs:short" minOccurs="0" />
+              <xs:element name="ItemMapValue" type="xs:short" minOccurs="0" />
+              <xs:element name="WeaponComplexity" type="xs:short" minOccurs="0" />
+              <xs:element name="AttackMode1" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="AttackMode2" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="ObjectSubtype" type="xs:short" minOccurs="0" />
+              <xs:element name="MaterialType" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="MinStr" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Weight" type="xs:int" minOccurs="0" />
+              <xs:element name="BasePrice" type="xs:int" minOccurs="0" />
+              <xs:element name="FrameInventID" type="xs:int" minOccurs="0" />
+              <xs:element name="Expr1" type="xs:short" />
+              <xs:element name="Expr2" type="xs:short" />
+              <xs:element name="Expr3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ObjectName" type="xs:string" minOccurs="0" />
+              <xs:element name="ObjectDesc" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:items" />
+      <xs:field xpath="mstns:Expr1" />
+      <xs:field xpath="mstns:Expr2" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

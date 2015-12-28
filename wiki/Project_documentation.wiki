@@ -1,0 +1,6 @@
+#summary This page contains project documentation divided into several categories
+#labels Phase-Design,Deprecated
+
+===General diagrams===
+
+*[http://falloutdev.googlecode.com/files/Server%20architecture.vsd Server architecture]
